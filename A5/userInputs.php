@@ -17,10 +17,17 @@ and open the template in the editor.
         $size = $_POST["size"];
         $numCreams = $_POST["numCreaSms"];
         $numSugar = $_POST["numSugar"];
+        $regular = $_POST["regular"];
+        $doubleDouble = $_POST["doubledouble"];
+        $tripleTriple = $_POST["tripletriple"];
+        $black = $_POST["black"];
+        $blkOneSugar = $_POST["blkOneSugar"];
+        $blkTwoSugar = $_POST["blkTwoSugar"];
+        $blkThreeSugar = $_POST["blkThreeSugar"];
 
         echo "Thank you for your order!";
-        
-        
+
+
         //Number of coffees + sizes
         //small
         if (($numCoffee == 1) && ($size == "small")) {
@@ -66,7 +73,7 @@ and open the template in the editor.
             echo "<img src=images/plus.jpg>";
             echo "<img src=images/cupLarge.jpg>";
         }
-        
+
         //cream
         if ($numCreams == 1) {
             echo "<img src=images/plus.jpg>";
@@ -102,6 +109,7 @@ and open the template in the editor.
             echo "<img src=images/plus.jpg>";
             echo "<img src=images/sugar.jpg>";
         }
+
         ?>
     </body>
 </html>
